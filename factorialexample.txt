@@ -1,0 +1,20 @@
+#!/bin/bash/python
+def factorial(n):
+	Debug = True
+	answer = 1
+	if Debug:
+		print "**entering function factional with parameter"
+	if type(n) != "<type 'int'>":
+		print type(n)
+		print "input must be an integer, not ", n
+		print "I give up!"
+	else:
+		for i in range(1,n+1):
+			answer = answer * i
+			if Debug:
+				print "answer is ", answer
+				print "i is ", i
+	return answer
+	
+# now test the function
+print "3! is ", factorial(3)
